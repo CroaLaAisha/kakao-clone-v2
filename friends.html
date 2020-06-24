@@ -7,6 +7,7 @@
       src="https://kit.fontawesome.com/3869241ea7.js"
       crossorigin="anonymous"
     ></script>
+    <link rel="stylesheet" href="css/styles.css" />
 
     <title>Friends | Kakao Clone</title>
   </head>
@@ -16,14 +17,14 @@
       <div class="status-bar__column">
         <i class="fas fa-globe"></i>
         <i class="far fa-image"></i>
+      </div>
+      <div class="status-bar__column">
         <i class="fab fa-bluetooth-b"></i>
         <i class="fas fa-bell"></i>
         <i class="fas fa-wifi"></i>
+        <i class="fas fa-signal"></i>
         <span class="status-bar__battery-level">100%</span>
         <i class="fas fa-battery-full"></i>
-        <i class="fas fa-clock"></i>
-      </div>
-      <div class="status-bar__column">
         <span class="status-bar__clock">오후 10:34 </span>
       </div>
     </div>
@@ -50,11 +51,11 @@
 
     <main class="friends">
       <header class="friends__header">
-        <div class="friends__friend friend friend--lg">
+        <div class="friends__friend friend">
           <div class="friend__column">
             <img src="images/avatar.jpg" class="g-avatar friend__avatar" />
-            <div class="friend__content">
-              <span class="friend__name">
+            <div class="friend__content myprofile">
+              <span class="friend__name myname">
                 CroaLaAisha
               </span>
               <span class="friend__status">
@@ -69,7 +70,7 @@
         <h5 class="friends__title">Plus Friend</h5>
         <div class="friends__friend friend">
           <div class="friend__column">
-            <img src="images/avatar.jpg" class="g-avatar friend__avatar" />
+            <img src="images/avatar.jpg" class="friend__avatar" />
             <div class="friend__content">
               <span class="friend__name">
                 Plus Friend
@@ -80,10 +81,12 @@
       </div>
 
       <ul class="friends__list">
-        <h5 class="friends__title">Friends 14</h5>
+        <h5 class="friends__title">
+          Friends 14
+        </h5>
         <li class="friends__friend friend friend--lg">
           <div class="friend__column">
-            <img src="images/avatar.jpg" class="g-avatar friend__avatar" />
+            <img src="images/avatar.jpg" class="friend__avatar" />
             <div class="friend__content">
               <span class="friend__name">
                 friend
@@ -95,8 +98,10 @@
           </div>
           <div class="friend__colmn">
             <div class="friend__now-listening">
-              <span>FTISLAND (FT Croa)</span>
-              <i class="fas fa-play"></i>
+              <span>
+                FTISLAND (FT Croa)
+                <i class="fas fa-play"></i>
+              </span>
             </div>
           </div>
         </li>
@@ -132,5 +137,8 @@
         </li>
       </ul>
     </nav>
+    <div class="bigScreen">
+      <span class="bigScreen__text">Please make youre screen small!</span>
+    </div>
   </body>
 </html>
